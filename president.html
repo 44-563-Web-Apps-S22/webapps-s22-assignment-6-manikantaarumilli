@@ -51,6 +51,29 @@ if(password==text){
 }
 }
 </script>
+<div>
+    <img src="Abyssinian Catbird.jpg" id="im" width="100" height="100" onclick="swapImage()">
+    <script>
+        var useImage=1;
+        function swapImage(){
+            switch(useImage){
+                case 1:
+                document.getElementById('im').src="Abyssinian Catbird.jpg";
+                useImage=2;
+                break;
+                case 2:
+                document.getElementById('im').src="Rainbow Pitta.jpg";
+                useImage=3;
+                break;
+                case 3:
+                document.getElementById('im').src="Ural Owl.jpg";
+               useImage=1;
+                break;
+            }
+        }
+    </script>
+
+</div>
 
 </body>
 </html> 
